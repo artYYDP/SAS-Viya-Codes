@@ -10,6 +10,6 @@ Esses repositório tem como função ajudar os programadores e analistas SAS a e
 
 ## 📖 Catálogo de Códigos
 
-001. Carregar tabela da work e promover no CAS [/sas_load_data_cas.sas]
+1. [Carregar tabela da work e promover no CAS](/sas_load_data_cas.sas)
 
 Essa macro %sas_load_data_cas é uma ferramenta útil para automatizar o processo de deletar uma tabela existente da memória CAS, carregar uma nova tabela do SAS para o CAS e promover essa tabela para que fique disponível a todos os usuários do servidor.
