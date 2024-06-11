@@ -16,4 +16,4 @@
 
 2. [Atualizar tabela do CAS](/sas_load_promote_cas.sas)
 
-  Esse código faz com que a tabela seja atualizada com novas informações. É um código excelente para caso você precise atualizar as tabelas diariamente de um DataLake, por exemplo.
+  Essa macro %sas_load_promote_cas faz com que a tabela do CAS seja atualizada com novas informações. É uma macro excelente para caso você precise atualizar as tabelas diariamente de um DataLake, por exemplo.
