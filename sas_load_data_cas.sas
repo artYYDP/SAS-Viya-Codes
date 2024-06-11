@@ -18,7 +18,7 @@
 
 /* Deleta a tabela da memória */
 proc casutil;
-droptable incaslib = "&outcaslib." casdata = "&casdata." quiet;
+  droptable incaslib = "&outcaslib." casdata = "&casdata." quiet;
 run;
 
 /* Carrega tabela no CAS*/
@@ -28,8 +28,8 @@ quit;
 
 /* Promove a tabela (disponível para todos os usuário acesso ao servidor) */
 proc casutil;
-promote incaslib = "&outcaslib." casdata = "&casdata."
-outcaslib = "&outcaslib." casout = "&casout.";
+  promote incaslib = "&outcaslib." casdata = "&casdata."
+  outcaslib = "&outcaslib." casout = "&casout.";
 quit;
 %mend sas_load_data_cas;
 
