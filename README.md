@@ -6,7 +6,7 @@
   Esses repositório tem como função ajudar os programadores e analistas SAS a execução do Mapa Coroplético de um maneira simples e rápida, que possa ser replicada em vários projetos.
 
 > [!CAUTION]
-> Não nos responsabilizamos pelo uso indevido do código.
+> Não me responsabilizo pelo uso indevido do código.
 
 ## 📖 Catálogo de Códigos
 
