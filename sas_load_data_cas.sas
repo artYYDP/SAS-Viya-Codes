@@ -1,20 +1,20 @@
 /* CÓDIGO PARA CARREGAR TABELA DA WORK E PROMOVER NO CAS */
-/* Versão: 1.0 */
-/* Status: Finalizado */
+/* Versão: 1.3 */
 /* Autor: Geiziane Silva de Oliveira */
+/* Alterado por: Arthur Diego Pereira */
+/* Última alteração: 17/06/2024 19:06 */
 /*  */
 /* FAVOR NÃO REMOVER OS CRÉDITOS */
 /*  */
 
 /* Defina as variáveis da macro */
-%let incaslib = ; /* Biblioteca CAS de entrada */
-%let casdata = ; /* Nome da tabela CAS de entrada e saída */
-%let data = ; /* Nome da tabela SAS a ser carregada */
-%let outcaslib = ; /* Biblioteca CAS de saída */
-%let casout = ; /* Nome da tabela CAS de saída */
+%let casdata = ; /* Nome da tabela no servidor CAS que será carregada e promovida */
+%let data = ; /* Nome da tabela SAS que será carregada no servidor CAS */
+%let outcaslib = ; /* Biblioteca CAS onde a tabela será armazenada após ser carregada */
+%let casout = ; /* Nome da tabela no servidor CAS após ter sido carregada */
 
 /* Macro para Carregar Dados no CAS e Promover a Tabela */
-%macro sas_load_data_cas(incaslib=,casdata=,data=,outcaslib=, casout=);
+%macro sas_load_data_cas(casdata=,data=,outcaslib=, casout=);
 
 /* Deleta a tabela da memória */
 proc casutil;
@@ -34,4 +34,4 @@ quit;
 %mend sas_load_data_cas;
 
 /* Chamar a macro com as variáveis definidas */
-%sas_load_data_cas(incaslib=&incaslib, casdata=&casdata, data=&data, outcaslib=&outcaslib, casout=&casout)
+%sas_load_data_cas(casdata=&casdata, data=&data, outcaslib=&outcaslib, casout=&casout)

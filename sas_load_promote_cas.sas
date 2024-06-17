@@ -1,14 +1,15 @@
 /* CÓDIGO PARA ATUALIZAR TABELA DO CAS */
 /* Versão: 1.2 */
-/* Status: Finalizado */
 /* Autor: Arthur Diego Pereira */
+/* Alterado por: -- */
+/* Última alteração: -- */
 /*  */
 /* FAVOR NÃO REMOVER OS CRÉDITOS */
 /*  */
 
 /* Defina as variáveis da macro */
-%let incaslib = ; /* Biblioteca CAS de entrada */
-%let casdata = ; /* Nome da tabela CAS de entrada e saída */
+%let incaslib = ; /* Biblioteca CAS onde se encontra a tabela para o promote */
+%let casdata = ; /* Nome da tabela CAS que você fará o promote */
 
 /* Macro para carregar e promover uma tabela no ambiente CAS */
 %macro sas_load_promote_cas(incaslib=, casdata=);
