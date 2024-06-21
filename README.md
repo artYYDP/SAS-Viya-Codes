@@ -17,3 +17,7 @@ Essa macro %sas_load_data_cas é uma ferramenta útil para automatizar o process
 2. [Atualizar tabela do CAS](/sas_load_promote_cas.sas)
 
 Essa macro %sas_load_promote_cas faz com que a tabela do CAS seja atualizada com novas informações. É uma macro excelente para caso você precise atualizar as tabelas diariamente de um DataLake, por exemplo.
+
+3. [Baixar e carregar planilha Excel do Google Drive](/dal_excel_from_google_drive.sas)
+
+Essa macro %dal_excel_from_google_drive faz com que a planilha no formato Excel (XLSX) disponibilizada na nuvem do Google Drive de modo público, seja baixada e atualizada no SAS. Excelente forma de atualizar informações complementares de dados, como fontes e dicionário de dados.
