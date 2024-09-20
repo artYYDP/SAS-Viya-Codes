@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemessaContratacao>
+<Ocorrencias_Schema>
+<Ocorrencia>
+  <IdNumRegistro>1123</IdNumRegistro>
+  <UnidadeGestoraGerenciadora>500E0600020</UnidadeGestoraGerenciadora>
+  <IdentificacaoContratacao>2023.500E0600020.01.0085</IdentificacaoContratacao>
+  <CodigoOcorrencia>1123</CodigoOcorrencia>
+  <NumeroEdital>018/2023</NumeroEdital>
+  <AnoEdital>2023</AnoEdital>
+  <CodigoLote>1</CodigoLote>
+  <OrigemOcorrencia>03</OrigemOcorrencia>
+  <TipoOcorrencia>04</TipoOcorrencia>
+  <DescricaoOcorrencia>RECURSO ADMINISTRATIVO interposto em contra decisão da COMISSÃO PERMANENTE DE LICITAÇÃO DE OBRAS E SERVIÇOS DE ENGENHARIA DA SECRETARIA DE ESTADO DA EDUCAÇÃO DO ESTADO – SEDU DO ESPÍRITO SANTO que em análise e julgamento da proposta técnica apresentada pela recorrente atribuiu nota inferior à que resultaria da correta análise dos documentos da proposta técnica</DescricaoOcorrencia>
+  <TipoIdentificacaoInteressado>2</TipoIdentificacaoInteressado>
+  <NumeroIdentificacaoInteressado>02786257000146</NumeroIdentificacaoInteressado>
+  <NomeInteressado>GEPLAN Planejamento, Projetos e Gerenciamento de Obras LTDA</NomeInteressado>
+  <DataOcorrencia>2024-03-14</DataOcorrencia>
+  <BaseLegalOcorrencia>Art. 109 da Lei nº 8.666/93</BaseLegalOcorrencia>
+  <JustificativaOcorrencia>Em suas razões recursais, a empresa Geplan - Planejamento, Projetos e Gerenciamento de Obras Ltda. alega que a experiência do arquiteto Ricardo Alessandrini Amaral, indicado como coordenador geral da equipe técnica, pode ser comprovada pelo atestado de capacidade técnica constante da certidão de acervo técnico nº 2220497185/2019, CREA/PE apresentada para a comprovação da experiência profissional do engenheiro Alexandre Dubiel Germano, visto que consta a participação do arquiteto Ricardo Amaral na execução de serviços de fiscalização de obras.</JustificativaOcorrencia>
+</Ocorrencia>
+<Ocorrencia>
+  <IdNumRegistro>1124</IdNumRegistro>
+  <UnidadeGestoraGerenciadora>500E0600020</UnidadeGestoraGerenciadora>
+  <IdentificacaoContratacao>2023.500E0600020.01.0085</IdentificacaoContratacao>
+  <CodigoOcorrencia>1124</CodigoOcorrencia>
+  <NumeroEdital>018/2023</NumeroEdital>
+  <AnoEdital>2023</AnoEdital>
+  <CodigoLote>1</CodigoLote>
+  <OrigemOcorrencia>03</OrigemOcorrencia>
+  <TipoOcorrencia>04</TipoOcorrencia>
+  <DescricaoOcorrencia>Recurso administrativo interposto pelo Consórcio Escola para Todos em face da decisão que atribuiu nota final 100,00 à empresa Maia Melo Engenharia Ltda. na CP 018/2023.</DescricaoOcorrencia>
+  <TipoIdentificacaoInteressado>2</TipoIdentificacaoInteressado>
+  <NumeroIdentificacaoInteressado>47283189000130</NumeroIdentificacaoInteressado>
+  <NomeInteressado>MHA Engenharia LTDA</NomeInteressado>
+  <DataOcorrencia>2024-06-18</DataOcorrencia>
+  <BaseLegalOcorrencia>Art. 109 da Lei nº 8.666/93</BaseLegalOcorrencia>
+  <JustificativaOcorrencia>Frente à decisão da fase comercial, o Consórcio Escola para Todos interpôs recurso alegando que a 1ª classificada Maia Melo Engenharia Ltda. apresentou proposta comercial em descumprimento às regras editalícias, eis que, em linhas gerais: i) há divergência entre a planilha orçamentária fornecida em mídia e o valor numérico indicado na proposta comercial impressa; e ii) a não observância do pagamento do
+piso salarial dos profissionais técnicos indicados em sua proposta.</JustificativaOcorrencia>
+</Ocorrencia>
+<Ocorrencia>
+  <IdNumRegistro>1125</IdNumRegistro>
+  <UnidadeGestoraGerenciadora>500E0600020</UnidadeGestoraGerenciadora>
+  <IdentificacaoContratacao>2023.500E0600020.01.0085</IdentificacaoContratacao>
+  <CodigoOcorrencia>1125</CodigoOcorrencia>
+  <NumeroEdital>018/2023</NumeroEdital>
+  <AnoEdital>2023</AnoEdital>
+  <CodigoLote>1</CodigoLote>
+  <OrigemOcorrencia>03</OrigemOcorrencia>
+  <TipoOcorrencia>04</TipoOcorrencia>
+  <DescricaoOcorrencia>Recurso administrativo interposto pelo Consórcio SC Educação em face da decisão que classificou à empresa Maia Melo Engenharia Ltda. na CP 018/2023 em 1º lugar.
+</DescricaoOcorrencia>
+  <TipoIdentificacaoInteressado>2</TipoIdentificacaoInteressado>
+  <NumeroIdentificacaoInteressado>01483360000154</NumeroIdentificacaoInteressado>
+  <NomeInteressado>SETEC HIDROBRASILEIRA Obras e Projetos Ltda.</NomeInteressado>
+  <DataOcorrencia>2024-06-19</DataOcorrencia>
+  <BaseLegalOcorrencia>Art. 109 da Lei Federal nº 8.666/93.</BaseLegalOcorrencia>
+  <JustificativaOcorrencia>O Consórcio SC Educação alega que as propostas apresentadas pelas demais licitantes devem ser desclassificadas em razão do descumprimento de cláusulas editalícias, eis que algumas propostas comerciais tinham a probabilidade de ser inexequíveis e outras demonstravam ter preços excessivos. Nesse sentido, interpôs recurso pugnando pela desclassificação das demais licitantes pelo não atendimento às diretrizes do edital e do mercado.
+</JustificativaOcorrencia>
+</Ocorrencia>
+<ResultadoOcorrencia>
+  <IdNumRegistro>128</IdNumRegistro>
+  <UnidadeGestoraGerenciadora>500E0600020</UnidadeGestoraGerenciadora>
+  <IdentificacaoContratacao>2023.500E0600020.01.0085</IdentificacaoContratacao>
+  <CodigoOcorrencia>1123</CodigoOcorrencia>
+  <DescricaoResultadoOcorrenciaJustificativaNaoConhecimento>A CPLOSE decidiu por acatar os argumentos expendidos pela D. PGE em face da consulta realizada, bem como pela Comissão de Assessoramento Técnico, e resolveu CONHECER para, no mérito, CONCEDER PROVIMENTO ao recurso interposto pela empresa Geplan Ltda.</DescricaoResultadoOcorrenciaJustificativaNaoConhecimento>
+  <DataJulgamentoOcorrencia>2024-05-29</DataJulgamentoOcorrencia>
+</ResultadoOcorrencia>
+<ResultadoOcorrencia>
+  <IdNumRegistro>129</IdNumRegistro>
+  <UnidadeGestoraGerenciadora>500E0600020</UnidadeGestoraGerenciadora>
+  <IdentificacaoContratacao>2023.500E0600020.01.0085</IdentificacaoContratacao>
+  <CodigoOcorrencia>1124</CodigoOcorrencia>
+  <DescricaoResultadoOcorrenciaJustificativaNaoConhecimento>A CPLOSE decidiu conhecer do recurso interposto, eis que presentes os requisitos de admissibilidade, para, no mérito, negar lhes provimento mantendo-se o resultado de classificação publicado em 15/07/2024.</DescricaoResultadoOcorrenciaJustificativaNaoConhecimento>
+  <DataJulgamentoOcorrencia>2024-07-15</DataJulgamentoOcorrencia>
+</ResultadoOcorrencia>
+<ResultadoOcorrencia>
+  <IdNumRegistro>130</IdNumRegistro>
+  <UnidadeGestoraGerenciadora>500E0600020</UnidadeGestoraGerenciadora>
+  <IdentificacaoContratacao>2023.500E0600020.01.0085</IdentificacaoContratacao>
+  <CodigoOcorrencia>1125</CodigoOcorrencia>
+  <DescricaoResultadoOcorrenciaJustificativaNaoConhecimento>A CPLOSE decidiu conhecer do recurso interposto, eis que presentes os requisitos de admissibilidade, para, no mérito, negar lhes provimento mantendo-se o resultado de classificação irretocado.</DescricaoResultadoOcorrenciaJustificativaNaoConhecimento>
+  <DataJulgamentoOcorrencia>2024-07-15</DataJulgamentoOcorrencia>
+</ResultadoOcorrencia>
+<ResultadoOcorrencia>
+  <IdNumRegistro>131</IdNumRegistro>
+  <UnidadeGestoraGerenciadora>500E0600020</UnidadeGestoraGerenciadora>
+  <IdentificacaoContratacao>2023.500E0600020.01.0085</IdentificacaoContratacao>
+  <CodigoOcorrencia>1125</CodigoOcorrencia>
+  <DescricaoResultadoOcorrenciaJustificativaNaoConhecimento>A CPLOSE decidiu conhecer do recurso interposto, eis que presentes os requisitos de admissibilidade, para, no mérito, negar lhes provimento mantendo-se o resultado de classificação irretocado.</DescricaoResultadoOcorrenciaJustificativaNaoConhecimento>
+  <DataJulgamentoOcorrencia>2024-07-15</DataJulgamentoOcorrencia>
+</ResultadoOcorrencia>
+</Ocorrencias_Schema>
+</RemessaContratacao>
