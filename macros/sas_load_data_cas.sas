@@ -1,5 +1,5 @@
 /* CÓDIGO PARA CARREGAR TABELA DA WORK E PROMOVER NO CAS */
-/* Versão: 1.3 */
+/* Versão: 1.4 */
 /* Autor: Geiziane Silva de Oliveira */
 /* Alterado por: Arthur Diego Pereira */
 /* Última alteração: 17/06/2024 19:06 */
@@ -14,11 +14,11 @@
 %let casout = ; /* Nome da tabela no servidor CAS após ter sido carregada */
 
 /* Macro para Carregar Dados no CAS e Promover a Tabela */
-%macro sas_load_data_cas(casdata=,data=,outcaslib=, casout=);
+%macro sas_load_data_cas(data=,outcaslib=, casout=);
 
 /* Deleta a tabela da memória */
 proc casutil;
-  droptable incaslib = "&outcaslib." casdata = "&casdata." quiet;
+  droptable incaslib = "&outcaslib." casdata = "&casout." quiet;
 run;
 
 /* Carrega tabela no CAS*/
@@ -28,10 +28,10 @@ quit;
 
 /* Promove a tabela (disponível para todos os usuário acesso ao servidor) */
 proc casutil;
-  promote incaslib = "&outcaslib." casdata = "&casdata."
+  promote incaslib = "&outcaslib." casdata = "&casout."
   outcaslib = "&outcaslib." casout = "&casout.";
 quit;
 %mend sas_load_data_cas;
 
 /* Chamar a macro com as variáveis definidas */
-%sas_load_data_cas(casdata=&casdata, data=&data, outcaslib=&outcaslib, casout=&casout)
+%sas_load_data_cas(data=&data, outcaslib=&outcaslib, casout=&casout)
