@@ -45,3 +45,5 @@ run;
 %let datainicio = 01jul2004; /* Defina a data de início do calendário */
 
 %calendar_table(start_date=&datainicio);
+
+/* Mudei essa parte somente para mostra para o Cougo */
