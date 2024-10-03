@@ -8,10 +8,17 @@
 /* Definir as informações da Planilha compartilhada */
 %let localxlsx = /local/nome_do_arquivo.xlsx; /* Define o local e o nome do arquivo onde o arquivo Excel será salvo */
 %let filexlsx = planilha_excel; /* Define o nome do arquivo */
-/* Coloque aqui somente o link do arquivo compartilhado */
-/* Lembrando que o link deve ser compartilhado públicamente */
-/* Exemplo: https://drive.google.com/file/d/1cVzWF8zJ5nd-6w-76RGNEOX6HSFuewAx/view?usp=drive_link */
-/* Pegue somente o código '1cVzWF8zJ5nd-6w-76RGNEOX6HSFuewAx' sem aspas simples */
+/*
+	Coloque aqui somente o link do arquivo compartilhado
+	Lembrando que o link deve ser compartilhado públicamente
+	Exemplo: 
+
+	https://drive.google.com/file/d/1cVzWF8zJ5nd-6w-76RGNEOX6HSFuewAx/view?usp=drive_link
+
+	Pegue somente o código '1cVzWF8zJ5nd-6w-76RGNEOX6HSFuewAx' sem aspas simples 
+*/
+
+/* Parâmetros */
 %let sharedurl = 1cVzWF8zJ5nd-6w-76RGNEOX6HSFuewAx; 
 %let libxlsx = myxlsx; /* Dê um nome para a Libname que lerá o arquivo XLSX */
 %let tabxlsx = Plan1; /* É necessário que você coloque o nome da Guia do Excel */

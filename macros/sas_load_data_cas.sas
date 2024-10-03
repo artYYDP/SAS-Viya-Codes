@@ -1,14 +1,13 @@
 /* CÓDIGO PARA CARREGAR TABELA DA WORK E PROMOVER NO CAS */
-/* Versão: 1.4 */
+/* Versão: 1.5 */
 /* Autor: Geiziane Silva de Oliveira */
 /* Alterado por: Arthur Diego Pereira */
-/* Última alteração: 17/06/2024 19:06 */
+/* Última alteração: 03/10/2024 14:49 */
 /*  */
 /* FAVOR NÃO REMOVER OS CRÉDITOS */
 /*  */
 
 /* Defina as variáveis da macro */
-%let casdata = ; /* Nome da tabela no servidor CAS que será carregada e promovida */
 %let data = ; /* Nome da tabela SAS que será carregada no servidor CAS */
 %let outcaslib = ; /* Biblioteca CAS onde a tabela será armazenada após ser carregada */
 %let casout = ; /* Nome da tabela no servidor CAS após ter sido carregada */
