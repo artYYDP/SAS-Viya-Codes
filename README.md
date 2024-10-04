@@ -26,3 +26,7 @@ A macro %dal_excel_from_google_drive faz com que a planilha no formato Excel (XL
 4. [Criar Tabela Calendário no SAS](/macros/calendar_table.sas)
 
 A macro %calendar_table cria uma tabela calendário na WORK. Depois você pode promovê-la e fazer com que seja carregado todos os dias, através de Fluxos de trabalhos.
+
+5. [Mudar o nome da tabela em memória](/macros/sas_change_table_name.sas)
+
+A macro %sas_change_table_name_cas muda o nome da tabela do CAS para minimizar erros de 32 caractéres.
