@@ -9,7 +9,7 @@ Esses repositório tem como função ajudar os programadores e analistas SAS a e
 > [!CAUTION]
 > Não me responsabilizo pelo uso indevido do código.
 
-## 📖 Catálogo de Códigos
+## 📖 Catálogo de Macros
 
 1. [Carregar tabela da work e promover no CAS](/macros/sas_load_data_cas.sas)
 
@@ -30,3 +30,11 @@ A macro %calendar_table cria uma tabela calendário na WORK. Depois você pode p
 5. [Mudar o nome da tabela em memória](/macros/sas_change_table_name.sas)
 
 A macro %sas_change_table_name_cas muda o nome da tabela do CAS para minimizar erros de 32 caractéres.
+
+## 📖 Catálogo de Códigos
+
+1. [Colocar um HTML dentro do SAS VA](/sas-codes/html-on-SAS-VA/)
+
+Esse código lhe dará uma base de como construir um HTML dentro do SAS VA de modo funcional, com botões de busca e exibindo imagens através do valor colocado no campo de pesquisa.
+
+Para esse código funcionar, será necessário que você tenha conhecimento no SAS Job Execution.

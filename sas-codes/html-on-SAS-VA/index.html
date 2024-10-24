@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Execution com Foto</title>
+  <style>
+    /* Estilo geral para a página */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #343a40;
+    }
+
+    /* Estilo do formulário */
+    #cpfForm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      font-size: 16px;
+      color: #495057;
+      margin-bottom: 8px;
+    }
+
+    /* Estilo do campo de entrada (input) */
+    #cpfInput {
+      width: 300px;
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      font-size: 16px;
+      margin-bottom: 15px;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    #cpfInput:focus {
+      border-color: #80bdff;
+      outline: 0;
+      box-shadow: 0 0 8px rgba(128, 189, 255, 0.6);
+    }
+
+    /* Estilo do botão */
+    button {
+      width: 150px;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Estilo do spinner de carregamento */
+    #loading {
+      display: none;
+      border: 12px solid #f3f3f3;
+      border-top: 12px solid #007bff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 2s linear infinite;
+      margin: 20px auto;
+      margin-top: 30px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Estilo da imagem */
+    #fotoPerfil {
+      visibility: hidden;
+      width: 200px;
+      height: auto;
+      margin-top: 20px;
+      filter: blur(4px);
+      border-radius: 8px;
+      border: 1px solid #ced4da;
+      display: block;
+      margin: 20px auto;
+    }
+    </style>
+</head>
+<body>
+    <h1>Foto do Envolvido</h1>
+
+    <!-- Formulário para o CPF -->
+    <form id="cpfForm">
+      <label for="cpfInput">Digite o CPF:</label>
+      <input type="text" id="cpfInput" placeholder="Ex: 12000759785" required />
+      <button type="submit">Buscar Foto</button>
+    </form>
+
+    <!-- Spinner de loading -->
+    <div id="loading"></div>
+
+    <!-- Imagem que será carregada -->
+    <img id="fotoPerfil" alt="Foto da Pessoa" />
+
+    <script>
+      // Função assíncrona para buscar os dados
+      async function fetchPessoaData(cpf) {
+        try {
+          // URL da requisição pelo Job Execution com o CPF dinâmico
+          const apiUrl = `https://pc.viya.sesp.es.gov.br/SASJobExecution/?_program=%2FPublic%2FJES%2FDEV%2FFoto-HTML%2Fperfil&cpf=${cpf}`;
+
+          // Exibe o spinner enquanto a requisição é feita
+          const loadingElement = document.getElementById("loading");
+          loadingElement.style.display = 'block';
+
+          // Faz a requisição e espera a resposta
+          const response = await fetch(apiUrl);
+
+          // Converte a resposta para JSON e espera a conversão
+          const data = await response.json();
+
+          // Seleciona o elemento da imagem
+          const imgElement = document.getElementById("fotoPerfil");
+
+          // Extrai a foto em base64 do JSON
+          const fotoBase64 = data[0].foto;
+
+          // Quando a imagem é carregada, oculta o spinner e exibe a imagem
+          imgElement.onload = () => {
+            loadingElement.style.display = 'none';
+            imgElement.style.visibility = 'visible';
+
+            // Força o navegador a redesenhar a imagem
+            imgElement.style.opacity = '0.99';
+            setTimeout(() => imgElement.style.opacity = '1', 50);
+          };
+
+          // Define o atributo src para a imagem em base64 no formato WEBP
+          imgElement.src = `data:image/webp;base64,${fotoBase64}`;
+
+        } catch (error) {
+          console.error('Erro ao buscar os dados:', error);
+          alert('Erro ao buscar os dados. Verifique o CPF e tente novamente.');
+          loadingElement.style.display = 'none';
+        }
+      }
+
+      // Escuta o evento de submissão do formulário
+      const cpfForm = document.getElementById("cpfForm");
+      cpfForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita o recarregamento da página
+
+        // Pega o valor do CPF inserido pelo usuário
+        const cpf = document.getElementById("cpfInput").value;
+
+        // Verifica se o CPF foi inserido corretamente antes de buscar os dados
+        if (cpf) {
+          // Chama a função para buscar os dados passando o CPF inserido
+          fetchPessoaData(cpf);
+        } else {
+          alert('Por favor, insira um CPF válido.');
+        }
+      });
+    </script>
+</body>
+</html>
