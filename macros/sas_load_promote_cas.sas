@@ -11,7 +11,6 @@
 /* ╔═════════════════════════════════════════════════════════╗ */
 /* ║  DROPA A TABELA NO CASLIB E CARREGA A TABELA PARA O CAS ║ */
 /* ╚═════════════════════════════════════════════════════════╝ */
-
 proc casutil;
 	droptable incaslib="&incaslib." casdata="&casdata." quiet;
 	load casdata="&casdata." incaslib="&incaslib."
