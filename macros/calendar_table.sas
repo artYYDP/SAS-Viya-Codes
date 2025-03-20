@@ -1,5 +1,5 @@
 /* ╔════════════════════════════════════════════════════╗ */
-/* ║          CÓDIGO PARA CRIAR UMA TABELA CALENDÁRIO   ║ */
+/* ║      CÓDIGO PARA CRIAR UMA TABELA CALENDÁRIO       ║ */
 /* ║----------------------------------------------------║ */
 /* ║  Versão: 1.3                                       ║ */
 /* ║  Autor: Arthur Diego Pereira                       ║ */
