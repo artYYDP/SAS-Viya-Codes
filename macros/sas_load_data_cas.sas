@@ -7,7 +7,7 @@
 /* ║                                                         ║ */
 /* ║  FAVOR NÃO REMOVER OS CRÉDITOS                          ║ */
 /* ╚═════════════════════════════════════════════════════════╝ */
-%macro sas_load_data_cas(casdata=, outcaslib=, casout=);
+%macro sas_load_data_cas(caslib=, casdata=, outcaslib=, casout=);
 
 /* ╔═════════════════════════════════════════════════════════╗ */
 /* ║  DELETA A TABELA DA MEMÓRIA                             ║ */
@@ -20,7 +20,7 @@ run;
 /* ║  CARREGA TABELA NO CAS                                  ║ */
 /* ╚═════════════════════════════════════════════════════════╝ */
 proc casutil;
-  load casdata="&casdata..sashdat" incaslib="&outcaslib." casout="&casout." outcaslib="&outcaslib." promote;
+  load casdata="&casdata..sashdat" incaslib="&caslib." casout="&casout." outcaslib="&outcaslib." promote;
 quit;
 
 /* ╔═════════════════════════════════════════════════════════╗ */
