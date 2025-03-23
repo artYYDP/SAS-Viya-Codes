@@ -1,12 +1,19 @@
 /* ╔═════════════════════════════════════════════════════════╗ */
 /* ║           CÓDIGO PARA ATUALIZAR TABELA DO CAS           ║ */
 /* ║---------------------------------------------------------║ */
-/* ║  Versão: 1.2                                            ║ */
+/* ║  Versão: 1.3                                            ║ */
 /* ║  Autor: Arthur Diego Pereira                            ║ */
 /* ║                                                         ║ */
 /* ║  FAVOR NÃO REMOVER OS CRÉDITOS                          ║ */
 /* ╚═════════════════════════════════════════════════════════╝ */
 %macro sas_load_promote_cas(incaslib=, casdata=);
+
+/* ╔═════════════════════════════════════════════════════════╗ */
+/* ║  CONECTA NO CAS                                         ║ */
+/* ╚═════════════════════════════════════════════════════════╝ */
+cas casauto;
+caslib _all_ assign;
+options casdatalimit=all mprint;
 
 /* ╔═════════════════════════════════════════════════════════╗ */
 /* ║  DROPA A TABELA NO CASLIB E CARREGA A TABELA PARA O CAS ║ */
@@ -24,4 +31,10 @@ proc casutil;
 	promote incaslib="&incaslib." casdata="&casdata."
 	outcaslib="&incaslib." casout="&casdata.";
 quit;
+
+/* ╔═════════════════════════════════════════════════════════╗ */
+/* ║  DESCONECTA DO CAS                                      ║ */
+/* ╚═════════════════════════════════════════════════════════╝ */
+cas casauto terminate;
+
 %mend sas_load_promote_cas;

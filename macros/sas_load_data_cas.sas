@@ -7,27 +7,27 @@
 /* ║                                                         ║ */
 /* ║  FAVOR NÃO REMOVER OS CRÉDITOS                          ║ */
 /* ╚═════════════════════════════════════════════════════════╝ */
-%macro sas_load_data_cas(data=,outcaslib=, casout=);
+%macro sas_load_data_cas(casdata=, outcaslib=, casout=);
 
 /* ╔═════════════════════════════════════════════════════════╗ */
 /* ║  DELETA A TABELA DA MEMÓRIA                             ║ */
 /* ╚═════════════════════════════════════════════════════════╝ */
 proc casutil;
-  droptable incaslib = "&outcaslib." casdata = "&casout." quiet;
+  droptable incaslib="&outcaslib." casdata="&casdata." quiet;
 run;
 
 /* ╔═════════════════════════════════════════════════════════╗ */
 /* ║  CARREGA TABELA NO CAS                                  ║ */
 /* ╚═════════════════════════════════════════════════════════╝ */
 proc casutil;
-  load data=&data. casout="&casout." outcaslib=&outcaslib. replace;
+  load casdata="&casdata..sashdat" incaslib="&caslib." casout="&casout." outcaslib="&outcaslib." promote;
 quit;
 
 /* ╔═════════════════════════════════════════════════════════╗ */
 /* ║  PROMOVE A TABELA                                       ║ */
 /* ╚═════════════════════════════════════════════════════════╝ */
 proc casutil;
-  promote incaslib = "&outcaslib." casdata = "&casout."
-  outcaslib = "&outcaslib." casout = "&casout.";
+  promote incaslib="&outcaslib." casdata="&casout."
+  outcaslib="&outcaslib." casout="&casout.";
 quit;
 %mend sas_load_data_cas;
