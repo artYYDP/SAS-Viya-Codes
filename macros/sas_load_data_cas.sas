@@ -22,12 +22,3 @@ run;
 proc casutil;
   load casdata="&casdata..sashdat" incaslib="&caslib." casout="&casout." outcaslib="&outcaslib." promote;
 quit;
-
-/* ╔═════════════════════════════════════════════════════════╗ */
-/* ║  PROMOVE A TABELA                                       ║ */
-/* ╚═════════════════════════════════════════════════════════╝ */
-proc casutil;
-  promote incaslib="&outcaslib." casdata="&casout."
-  outcaslib="&outcaslib." casout="&casout.";
-quit;
-%mend sas_load_data_cas;
