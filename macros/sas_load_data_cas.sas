@@ -22,3 +22,5 @@ run;
 proc casutil;
   load casdata="&casdata..sashdat" incaslib="&caslib." casout="&casout." outcaslib="&outcaslib." promote;
 quit;
+
+%mend sas_load_data_cas;
