@@ -20,7 +20,7 @@ run;
 /* ║  CARREGA TABELA NO CAS                                  ║ */
 /* ╚═════════════════════════════════════════════════════════╝ */
 proc casutil;
-  load casdata="&casdata..sashdat" incaslib="&caslib." casout="&casout." outcaslib="&outcaslib." promote;
+  load casdata="&casdata..sashdat" incaslib="&outcaslib." casout="&casout." outcaslib="&outcaslib." promote;
 quit;
 
 /* ╔═════════════════════════════════════════════════════════╗ */
